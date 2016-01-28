@@ -6,7 +6,6 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.50.11"
 
   config.vm.provider "virtualbox" do |v|
-    # Default of 512 MB is too little for an `npm install` -- TODO: still true?
     v.memory = 1024
 
     # Only allow drift of 1 sec, instead of 20 min default
